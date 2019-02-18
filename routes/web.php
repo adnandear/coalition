@@ -18,3 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::resource('/products','ProductController');
+/*Route::post('/product/create/{pid}', [
+
+'uses'=>'BudgetController@store',
+'as'=>'createbudget.store'
+
+]);*/
